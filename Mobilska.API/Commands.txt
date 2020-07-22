@@ -1,0 +1,10 @@
+﻿need to add:
+- Microsoft.VisualStudio.Web.CodeGeneration
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.EntityFrameworkCore.SqlServer.design
+- Microsoft.EntityFrameworkCore.Tools
+
+
+Scaffold-DbContext "Server=.;Database=MobilskaDb;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir DataBase -Force
+
+add-migration initial -Context APIContext
